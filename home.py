@@ -1,10 +1,16 @@
 import streamlit as st
-import os
-import datetime
 
-st.set_page_config(page_title="App Azul", 
-                   page_icon="🍣", 
-                   layout="wide")
+# --- PAGE SETUP ---
+project_1_page = st.Page(
+  page = "pages/regisro.py",
+  title = "Registro",
+  icon = ":material/description:",
+  default = True,
+)
 
-st.title(":blue[App Azul - ¡Bienvenido!]")
-st.sidebar.success("Selecciona una opción:")
+project_2_page = st.Page(
+  page = "pages/regisro.py",
+  title = "Detección de calorías",
+  icon = ":material/photo_camera:",
+  default = True,
+)
