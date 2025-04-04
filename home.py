@@ -1,9 +1,5 @@
 import streamlit as st
 
-register_page = st.Page("pages/Registro.py", title="Registrar de datos", icon=":material/add_circle:")
-calorie_page = st.Page("pages/Calculo.py", title="Calculo de calorias", icon=":material/add_circle:")
-pg = st.navigation([register_page, calorie_page])
-
 st.set_page_config(page_title="App Azul", page_icon=":material/edit:", layout="wide")
 
 with open("style/style.css" ) as css:
