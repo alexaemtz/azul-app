@@ -29,6 +29,9 @@ else:
         except Exception as e:
             return f"Error al obtener la respuesta de Gemini: {e}"
 
+    st.set_page_config(page_title="Contador de Calorias", page_icon="🍣", layout="wide")
+    with open("style/style.css" ) as css:
+        st.markdown( f'<style>{css.read()}</style>' , unsafe_allow_html= True)
     st.title("🍵 Cálculo de calorías")
     st.write(
         """¡Bienvenido a su contador de calorías! Esta área te ayuda a calcular el número de calorías contenidas en una comida específica. 
