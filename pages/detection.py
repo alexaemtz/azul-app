@@ -6,7 +6,7 @@ import google.generativeai as genai
 import re
 
 load_dotenv()
-my_api_key = st.secrets("GOOGLE_API_KEY")
+my_api_key = os.getenv("GOOGLE_API_KEY")
 
 if not my_api_key:
     st.error("Por favor, configura la clave API de Google en las variables de entorno.")
