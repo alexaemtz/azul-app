@@ -1,6 +1,6 @@
 import streamlit as st
 import os
-import datetime
+from datetime import datetime
 import pytz
 
 st.set_page_config(page_title="App Azul", page_icon="🍣", layout="wide")
