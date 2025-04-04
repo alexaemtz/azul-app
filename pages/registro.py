@@ -1,7 +1,7 @@
 import streamlit as st
 import os
 import datetime
-from zoneinfo import ZoneInfo
+import pytz
 
 st.set_page_config(page_title="App Azul", page_icon="🍣", layout="wide")
 st.title(":blue[App Azul - ¡Bienvenido!]")
@@ -11,8 +11,8 @@ st.write("Esta aplicación le será de ayuda para el monitoreo y control de su d
 st.subheader("Registro")
 st.write("Cree el registro de glucosa.")
 
-zona_local = ZoneInfo("America/Mexico_City")
-hora_local = datetime.now(tz=zona_local)
+zona_local = pytz.timezone("America/Mexico_City")
+hora_local = datetime.now(zona_local)
 
 fecha =st.date_input("Fecha:",hora_local)
 hora = st.time_input("Hora:",hora_local)
