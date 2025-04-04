@@ -30,11 +30,11 @@ else:
             return f"Error al obtener la respuesta de Gemini: {e}"
 
     st.set_page_config(page_title="Calorie Counter", page_icon="🍵", layout="wide")
-    st.title("🍵 Calorie Counter")
+    st.title("🍵 Cálculo de calorías")
     st.write(
-        """¡Bienvenido a Calorie Counter! Este proyecto te ayuda a calcular el número de calorías necesarias para una comida específica. 
-        Utiliza el botón 'Subir imagen' para seleccionar una imagen y luego proporciona una descripción de la comida. 
-        El sistema utilizará la inteligencia artificial de Gemini para calcular el número de calorías necesarias."""
+        """¡Bienvenido a su contador de calorías! Esta área te ayuda a calcular el número de calorías contenidas en una comida específica. 
+        Utiliza el botón 'Subir imagen' para seleccionar una imagen. No es necesario ingresar una descripción.
+        El sistema utilizará la inteligencia artificial de Gemini para reconocer y calcular el contenido nutrimental de la comida."""
     )
 
     user_input = st.text_input(
