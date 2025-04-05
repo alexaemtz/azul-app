@@ -3,7 +3,6 @@ import os
 from datetime import datetime
 import pytz
 
-st.set_page_config(page_title="App Azul", page_icon="🍣", layout="wide")
 with open("style/style.css" ) as css:
     st.markdown( f'<style>{css.read()}</style>' , unsafe_allow_html= True)
 st.title(":blue[App Azul - ¡Bienvenido!]")
