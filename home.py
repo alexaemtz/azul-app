@@ -8,7 +8,7 @@ st.header("¡Bienvenido a su App Azul!", divider="rainbow")
 st.write("Esta aplicación le será de ayuda para el monitoreo y control de su diabetes.")
 
 # --- PAGE SETUP ---
-main_page = st.Page("main-page.py",
+main_page = st.Page("home.py",
                     title="Inicio",
                     icon=":material/home:"),
 
